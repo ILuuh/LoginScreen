@@ -2,9 +2,9 @@
 
 #Altere as variáveis abaixo de acordo com a sua necessidade
 #na variável repositório, prefira a url do repositório baseada em https para nao termos que configurar SSH
-export name='Luiz Gustavo Gouvêa de Paula'
-export email="luiz.gouvea2b2@gmail.com"
-export repositorio="https://github.com/ILuuh/LoginScreen.git";
+export name='Pedro Henrique Scabelo'
+export email="pedro.scabelo2b2@gmail.com"
+export repositorio="https://github.com/PedroHS05/LoginScreen.git";
 
 #Daqui pra baixo mexa somente se for realmente necessário ou se souber o que está fazendo :P
 
@@ -16,8 +16,6 @@ echo "#ignoring windows, mac and linux folders" >> .gitignore
 echo "windows" >> .gitignore
 echo "mac" >> .gitignore
 echo "linux" >> .gitignore
-
-rm -Rf .git
 
 git init
 git remote add origin $repositorio
@@ -31,6 +29,6 @@ git commit -m "added ignored files" .gitignore
 
 git add .
 
-git commit -am "Atividade 22/09/2023"
+git commit -am "branch com o código da aula do dia $(date)"
 
 git push origin $branch_name
